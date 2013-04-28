@@ -112,12 +112,23 @@ endif
 map <F1> :previous<CR>  " map F1 to open previous buffer
 map <F2> :next<CR>      " map F2 to open next buffer
 map <silent> <C-N> :silent noh<CR> " turn off highlighted search
-map ,v :sp ~/.vimrc<cr> " edit my .vimrc file in a split
-map ,e :e ~/.vimrc<cr>      " edit my .vimrc file
-map ,u :source ~/.vimrc<cr> " update the system settings from my vimrc file
+map ,v :sp ~/_vimrc<cr> " edit my .vimrc file in a split
+map ,e :e ~/_vimrc<cr>      " edit my .vimrc file
+map ,u :source ~/_vimrc<cr> " update the system settings from my vimrc file
 "----- write out html file
 map ,h :source $VIM/vim71/syntax/2html.vim<cr>:w<cr>:clo<cr>
+" 行移动
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
 
+" Scripts shortcuts
+map <F3> :FufBuffer<cr>
+map <F4> :NERDTree<cr>
+nnoremap <silent> <F8> :TlistToggle<CR>
 
 " Common command line typos
 cmap W w
