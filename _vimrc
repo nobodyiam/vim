@@ -1,4 +1,4 @@
-set nocompatible               " be iMproved
+﻿set nocompatible               " be iMproved
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
@@ -72,10 +72,10 @@ set fileencodings=UCS-BOM,UTF-8,Chinese
 syntax on           " syntax highlighing
 if has("gui_running")
     " See ~/.gvimrc
-    set guifont=Monospace\ 10  " use this font 
+    set guifont=Consolas\ 10  " use this font 
     set lines=50       " height = 50 lines
     set columns=100        " width = 100 columns
-    "set background=light   " adapt colors for background
+    set background=light   " adapt colors for background
     color peachpuff 
     "set selectmode=mouse,key,cmd
     set keymodel=
@@ -95,9 +95,9 @@ if has("autocmd")
     
     " When using mutt, text width=72
     au FileType mail,tex set textwidth=72
-    " au FileType cpp,c,java,sh,pl,php,asp  set autoindent
-    " au FileType cpp,c,java,sh,pl,php,asp  set smartindent
-    " au FileType cpp,c,java,sh,pl,php,asp  set cindent
+    au FileType cpp,c,java,sh,pl,php,asp  set autoindent
+    au FileType cpp,c,java,sh,pl,php,asp  set smartindent
+    au FileType cpp,c,java,sh,pl,php,asp  set cindent
     "au BufRead mutt*[0-9] set tw=72
     
     " Automatically chmod +x Shell and Perl scripts
