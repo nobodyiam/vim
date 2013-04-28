@@ -14,6 +14,7 @@ Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'The-NERD-tree'
 Bundle 'taglist.vim'
+Bundle 'AutoComplPop'
 "格式3：非Github的Git仓库
 Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
 
