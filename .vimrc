@@ -1,4 +1,4 @@
-source ~/vimrc
+source ~/.vim/vimrc
 
 " To fix the alt key not working issue in terminal
 let c='a'
