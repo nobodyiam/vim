@@ -59,8 +59,8 @@ if has("gui_running")
     set background=light " adapt colors for background
     colorscheme peachpuff
 else
-    colorscheme elflord    " use this color scheme
-    set background=dark        " adapt colors for background
+    colorscheme elflord " use this color scheme
+    set background=dark " adapt colors for background
 endif
 
 if has("autocmd")
@@ -68,9 +68,9 @@ if has("autocmd")
     au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
     " Filetypes (au = autocmd)
-    au FileType helpfile set nonumber      " no line numbers when viewing help
-    au FileType helpfile nnoremap <buffer><cr> <c-]>   " Enter selects subject
-    au FileType helpfile nnoremap <buffer><bs> <c-T>   " Backspace to go back
+    au FileType helpfile set nonumber                " no line numbers when viewing help
+    au FileType helpfile nnoremap <buffer><cr> <c-]> " Enter selects subject
+    au FileType helpfile nnoremap <buffer><bs> <c-T> " Backspace to go back
 
     autocmd FileType php setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
     autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
