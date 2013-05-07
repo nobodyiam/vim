@@ -16,22 +16,22 @@ set hlsearch        " highlight searches
 
 " editor settings
 set history=1000
-set nocompatible    " use vim defaults
-set nofoldenable                                                  " disable folding"
-set confirm                                                       " prompt when existing from an unsaved file
-set backspace=indent,eol,start                                    " More powerful backspacing
-set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
-set mouse=a                                                       " use mouse in all modes
-set report=0                                                      " always report number of lines changed                "
-"set nowrap                                                        " dont wrap lines
-set scrolloff=5                                                   " 5 lines above/below cursor when scrolling
-set number                                                        " show line numbers
-set showmatch                                                     " show matching bracket (briefly jump)
-set showcmd                                                       " show typed command in status bar
-set title                                                         " show file in titlebar
-set laststatus=2                                                  " use 2 lines for the status bar
-set matchtime=2                                                   " show matching bracket for 0.2 seconds
-set matchpairs+=<:>                                               " specially for html
+set nocompatible               " use vim defaults
+set nofoldenable               " disable folding                                      "
+set confirm                    " prompt when existing from an unsaved file
+set backspace=indent,eol,start " More powerful backspacing
+set t_Co=256                   " Explicitly tell vim that the terminal has 256 colors "
+set mouse=a                    " use mouse in all modes
+set report=0                   " always report number of lines changed                "
+" set nowrap                   " dont wrap lines
+set scrolloff=5                " 5 lines above/below cursor when scrolling
+set number                     " show line numbers
+set showmatch                  " show matching bracket (briefly jump)
+set showcmd                    " show typed command in status bar
+set title                      " show file in titlebar
+set laststatus=2               " use 2 lines for the status bar
+set matchtime=2                " show matching bracket for 0.2 seconds
+set matchpairs+=<:>            " specially for html
 
 " Default Indentation
 set autoindent
@@ -42,26 +42,22 @@ set shiftwidth=4    " indent width
 set expandtab       " expand tab to space
 
 "unvisited changes
-set ruler           " show the cursor position all the time
-set visualbell t_vb=    " turn off error beep/flash
-set novisualbell    " turn off visual bell
-set nobackup        " do not keep a backup file
-set ttyfast         " smoother changes
-set modeline        " last lines in document sets vim mode
-set modelines=3     " number lines checked for modelines
-set shortmess=atI   " Abbreviate messages
-set nostartofline   " don't jump to first character when paging
-set whichwrap=b,s,h,l,<,>,[,]   " move freely between files
-"set viminfo='20,<50,s10,h
+set ruler                     " show the cursor position all the time
+set visualbell t_vb=          " turn off error beep/flash
+set novisualbell              " turn off visual bell
+set nobackup                  " do not keep a backup file
+set ttyfast                   " smoother changes
+set modeline                  " last lines in document sets vim mode
+set modelines=3               " number lines checked for modelines
+set shortmess=atI             " Abbreviate messages
+set nostartofline             " don't jump to first character when paging
+set whichwrap=b,s,h,l,<,>,[,] " move freely between files
 
 if has("gui_running")
-    " See ~/.gvimrc
-    set lines=50       " height = 50 lines
-    set columns=100        " width = 100 columns
-    set background=light   " adapt colors for background
-    color peachpuff
-    "set selectmode=mouse,key,cmd
-    set keymodel=
+    set lines=50         " height = 50 lines
+    set columns=100      " width = 100 columns
+    set background=light " adapt colors for background
+    colorscheme peachpuff
 else
     colorscheme elflord    " use this color scheme
     set background=dark        " adapt colors for background
@@ -140,10 +136,10 @@ let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
 
 " Keyboard mappings
-map <F1> :previous<CR>  " map F1 to open previous buffer
-map <F2> :next<CR>      " map F2 to open next buffer
+map  <F1> :previous<CR>  " map F1 to open previous buffer
+map  <F2> :next<CR>      " map F2 to open next buffer
 nmap <F3> :IndentGuidesToggle<cr>
-map <F4> :CtrlPBuffer<cr>
+map  <F4> :CtrlPBuffer<cr>
 nmap <F5> :TagbarToggle<cr>
 nmap <F6> :NERDTreeToggle<cr>
 map <silent> <C-N> :silent noh<CR> " turn off highlighted search
