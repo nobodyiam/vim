@@ -4,19 +4,56 @@ filetype off                   " required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" 使用Vundle来管理Vundle，这个必须要有。
+" let Vundle manage Vundle
+" required!
 Bundle 'gmarik/vundle'
-"接下来是要安装的插件
-"格式1：Github上其他用户的仓库（非vim-scripts账户里的仓库，所以要加Github用户名）
+
+"------------------
+" Code Completions
+"------------------
+Bundle 'Shougo/neocomplcache'
+Bundle 'ervandew/supertab'
+Bundle 'Raimondi/delimitMate'
+
+"-----------------
+" Fast navigation
+"-----------------
+Bundle 'Lokaltog/vim-easymotion'
+
+"--------------
+" Fast editing
+"--------------
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'godlygeek/tabular'
+Bundle 'nathanaelkane/vim-indent-guides'
+
+"--------------
+" IDE features
+"--------------
+Bundle 'scrooloose/nerdtree'
+Bundle 'majutsushi/tagbar'
+Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
-"格式2：vim-scripts里面的仓库，直接打仓库名即可。
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-Bundle 'The-NERD-tree'
-Bundle 'taglist.vim'
-Bundle 'AutoComplPop'
-"格式3：非Github的Git仓库
-Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
+Bundle 'bronson/vim-trailing-whitespace'
+
+"----------------------------------------
+" Syntax/Indent for language enhancement
+"----------------------------------------
+"------- web backend ---------
+Bundle '2072/PHP-Indenting-for-VIm'
+
+"------- web frontend ----------
+Bundle 'othree/html5.vim'
+Bundle 'pangloss/vim-javascript'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'nono/jquery.vim'
+
+"------- markup language -------
+Bundle 'tpope/vim-markdown'
+
+"--------------
+" Color Schemes
+"--------------
 
 filetype plugin indent on     " required!
 "
