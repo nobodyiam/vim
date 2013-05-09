@@ -14,6 +14,11 @@ Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
 Bundle 'ervandew/supertab'
 Bundle 'Raimondi/delimitMate'
+Bundle 'honza/snipmate-snippets'
+Bundle 'honza/vim-snippets'
+"------ snipmate dependencies -------
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
 
 "-----------------
 " Fast navigation
@@ -26,6 +31,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'godlygeek/tabular'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'nvie/vim-togglemouse'
 
 "--------------
 " IDE features

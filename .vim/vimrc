@@ -1,4 +1,4 @@
-source ~/.vim/bundles.vim
+﻿source ~/.vim/bundles.vim
 
 " encoding dectection
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
@@ -111,6 +111,10 @@ let NERDChristmasTree=0
 let NERDTreeWinSize=30
 let NERDTreeChDirMode=2
 let NERDTreeShowBookmarks=1
+
+" nerdcommenter
+let NERDSpaceDelims=1
+let NERDCompactSexyComs=1
 
 " easy-motion
 let g:EasyMotion_leader_key = '<Leader>'
