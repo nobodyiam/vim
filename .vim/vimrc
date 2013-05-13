@@ -53,16 +53,15 @@ set shortmess=atI             " Abbreviate messages
 set nostartofline             " don't jump to first character when paging
 set whichwrap=b,s,h,l,<,>,[,] " move freely between files
 
+colorscheme desert  " use this color scheme
+set background=dark " adapt colors for background
 if has("gui_running")
     set lines=50         " height = 50 lines
     set columns=100      " width = 100 columns
     " set background=light " adapt colors for background
     " colorscheme peachpuff
-    colorscheme desert " use this color scheme
-    set background=dark " adapt colors for background
 else
-    colorscheme elflord " use this color scheme
-    set background=dark " adapt colors for background
+    " colorscheme elflord " use this color scheme
 endif
 
 if has("autocmd")
