@@ -147,6 +147,7 @@ map  <F4> :CtrlPBuffer<cr>
 nmap <F5> :TagbarToggle<cr>
 nmap <F6> :NERDTreeToggle<cr>
 map <silent> <C-N> :silent noh<CR> " turn off highlighted search
+map <C-c> <Plug>NERDCommenterToggle " comment
 
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
