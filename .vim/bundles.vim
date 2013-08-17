@@ -40,6 +40,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'majutsushi/tagbar'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-powerline'
 Bundle 'bronson/vim-trailing-whitespace'
 
 "----------------------------------------
