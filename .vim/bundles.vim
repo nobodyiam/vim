@@ -54,6 +54,7 @@ Bundle 'othree/html5.vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'nono/jquery.vim'
+Bundle 'maksimr/vim-jsbeautify'
 
 "------- markup language -------
 Bundle 'tpope/vim-markdown'
