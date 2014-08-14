@@ -176,13 +176,13 @@ nnoremap <c-l> <c-w>l
 
 ".vimrc
 
-map <c-f> :call JsBeautify()<cr>
+map <S-f> :call JsBeautify()<cr>
 " or
-autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+autocmd FileType javascript noremap <buffer>  <S-f> :call JsBeautify()<cr>
 " for html
-autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
+autocmd FileType html noremap <buffer> <S-f> :call HtmlBeautify()<cr>
 " for css or scss
-autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+autocmd FileType css noremap <buffer> <S-f> :call CSSBeautify()<cr>
 
 " Common command line typos
 cmap W w
